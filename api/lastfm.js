@@ -2,8 +2,8 @@
 export default async function handler(req, res) {
   const { artist, album } = req.query;
   
-  const apiKey = "YOUR_LASTFM_API_KEY";
-  const username = "YOUR_LASTFM_USERNAME";
+  const apiKey = "e7283f7d045c53eeb591bfe286ea00da";
+  const username = "Acecat23";
 
   const url = `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${apiKey}&artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}&username=${username}&format=json`;
 
